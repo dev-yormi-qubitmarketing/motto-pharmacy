@@ -26,21 +26,22 @@
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu" aria-expanded="false"><span class="sr-only"></span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
 			</div>
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="nav navbar-nav">
-					<li><a href="index.html">Inicio</a></li>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="new-prescriptions.html">New Prescriptions</a></li>
-							<li><a href="refill-prescriptions.html">Refill Prescriptions</a></li>
-							<li><a href="transfer-prescriptions.html">Transfer Prescriptions</a></li>
+					<li class="dropdown mega-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu mega-dropdown-menu row navbar-nav">
+							<li class="col-lg-3 col-sm-3"><a href="new-prescriptions.html">New Prescriptions<img class="img-responsive" src="img/new_prescription.jpg"/></a></li>
+							<li class="col-lg-3 col-sm-3"><a href="refill-prescriptions.html">Refill Prescriptions<img class="img-responsive" src="img/refill_prescription.jpg"/></a></li>
+							<li class="col-lg-3 col-sm-3"><a href="transfer-prescriptions.html">Transfer Prescriptions<img class="img-responsive" src="img/trasnfer_prescriptcion.jpg"/></a></li>
+							<li class="col-lg-3 col-sm-3"><a href="other-services.html">Other Servicices<img class="img-responsive" src="img/other-services.jpg"/></a></li>
 						</ul>
+						<li> <a href="faq.html">FAQ</a></li>
+						<li> <a href="contact.html">Contact</a></li>
 					</li>
-					<li><a href="faq.html">FAQ</a></li>
-					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -57,7 +58,7 @@
 							<div class="formBox-2">
 								<div class="row">
 									<div class="col-lg-12">
-										<h3>Talk to you pharmacist</h3>
+										<h3>Talk to Your Pharmacist</h3>
 									</div>
 								</div>
 								<form action="">
@@ -98,7 +99,7 @@
 							<div class="formBox-2">
 								<div class="row">
 									<div class="col-lg-12">
-										<h3>Talk to you pharmacist</h3>
+										<h3>Talk to Your Pharmacist</h3>
 									</div>
 								</div>
 								<form action="">
@@ -139,7 +140,7 @@
 							<div class="formBox-2">
 								<div class="row">
 									<div class="col-lg-12">
-										<h3>Talk to you pharmacist</h3>
+										<h3>Talk to Your Pharmacist</h3>
 									</div>
 								</div>
 								<form action="">
@@ -180,7 +181,7 @@
 							<div class="formBox-2">
 								<div class="row">
 									<div class="col-lg-12">
-										<h3>Talk to you pharmacist</h3>
+										<h3>Talk to Your Pharmacist</h3>
 									</div>
 								</div>
 								<form action="">
@@ -229,37 +230,83 @@
 			<div class="col-sm-6 col-md-4 col-lg-3 mtb">
 				<div class="card-service"><img class="img-responsive" src="img/service/service-1.jpg" alt=""/>
 					<div class="caption">
-						<h3>New |<small> Prescriptions</small></h3><a class="btn button-secondary" href="#">More</a>
+						<h3>New |<small> Prescriptions</small></h3><a class="btn button-secondary" href="new-prescriptions.html">More</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 mtb">
 				<div class="card-service"><img class="img-responsive" src="img/service/service-2.jpg" alt=""/>
 					<div class="caption">
-						<h3>Refill |<small> Prescriptions</small></h3><a class="btn button-secondary" href="#">More</a>
+						<h3>Refill |<small> Prescriptions</small></h3><a class="btn button-secondary" href="refill-prescriptions.html">More</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 mtb">
 				<div class="card-service"><img class="img-responsive" src="img/service/service-3.jpg" alt=""/>
 					<div class="caption">
-						<h3>Transfer |<small> Prescriptions</small></h3><a class="btn button-secondary" href="#">More</a>
+						<h3>Transfer |<small> Prescriptions</small></h3><a class="btn button-secondary" href="transfer-prescriptions.html">More</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-4 col-lg-3 mtb">
 				<div class="card-service"><img class="img-responsive" src="img/service/service-4.jpg" alt=""/>
 					<div class="caption">
-						<h3>FAQ |<small> ALL</small></h3><a class="btn button-secondary" href="#">More</a>
+						<h3>OTHER |<small> SERVICES</small></h3><a class="btn button-secondary" href="other-services.html">More</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Parallax-->
-	<div class="col-lg-12 parallax" style="background-image: url('img/parallax/parallax-1.jpg');">
-		<div class="text-vcenter">
-			<h2>Motto <small>Pharmacy</small></h2>
+	<!-- Carousel-->
+	<div class="carousel slide fade-carousel" id="carrusel-secondary" data-ride="carousel">
+		<!-- Indicadores-->
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carrusel-secondary" data-slide-to="0"></li>
+			<li data-target="#carrusel-secondary" data-slide-to="1"></li>
+			<li data-target="#carrusel-secondary" data-slide-to="2"></li>
+		</ol>
+		<!-- imagenes-->
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="overlay"></div>
+				<div class="fill" style="background-image:url('img/banner/banner-personalized.jpg');">
+					<div class="hero">
+						<div class="carousel-caption"> 
+							<hgroup>
+								<h3>Personalized </h3>
+								<p>We offer solutions that are personalized for the need of each customer.</p>
+							</hgroup>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="overlay"></div>
+				<div class="fill" style="background-image:url('img/banner/banner-community.jpg');">
+					<div class="hero">
+						<div class="carousel-caption"> 
+							<hgroup>
+								<h3>Community  </h3>
+								<p>We are dedicated to serving our community and committed to provide a unique </p>
+							</hgroup>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="overlay"></div>
+				<div class="fill" style="background-image:url('img/banner/banner-counseling.jpg');">
+					<div class="hero">
+						<div class="carousel-caption"> 
+							<hgroup>
+								<h3>Counseling   </h3>
+								<p>We take customer care to new Heights by offering personal counseling for all your medication needs   </p>
+							</hgroup>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Control-->
 		</div>
 	</div>
 	<!-- About-->
@@ -269,13 +316,8 @@
 				<h2 class="text-center title">Motto Pharmacy</h2>
 				<hr class="separator-md"/>
 			</div>
-			<div class="col-lg-8">
-				<h3 class="sub__title">About </h3>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, in! Eius consectetur, quae sed distinctio placeat, unde deserunt nihil, quod repudiandae dicta fugit laboriosam dolor. Sequi sit soluta tenetur consequuntur vero itaque quod provident ipsum, incidunt laborum similique deleniti quasi quia quisquam vel aliquam quaerat, rerum dignissimos ut voluptatem aperiam.</p><a class="btn button-secondary" href="about.html">More</a>
-			</div>
-			<div class="col-lg-4">
-				<h3 class="sub__title">Because we</h3>
-				<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quo, est? Iusto, vitae. Facilis molestiae assumenda accusamus, quasi, ipsam voluptate voluptatum officia illo nostrum alias labore, quibusdam esse iste! Necessitatibus!</p>
+			<div class="col-lg-12">
+				<p class="text-justify">At Motto Pharmacy we believe in the strength of our local community. When you become a customer at our store you join the Motto family and we are dedicated to providing you top-shelf care. You can never have to many questions, we will always work to find you the answers and help you are looking for. Our experienced staff is on call to not only provide day-to-day services, but long term care solutions. </p><a class="btn button-secondary" href="about.html">More</a>
 			</div>
 		</div>
 	</div>
@@ -285,7 +327,7 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="icons text-center"><i class="material-icons">access_time</i>
-						<h4>Mon-Fir</h4>
+						<h4>Mon-Fri</h4>
 						<p>9:00 am - 5:00 pm </p>
 						<h4>Saturday Sunday</h4>
 						<p>Close</p>
@@ -294,21 +336,21 @@
 				<div class="col-lg-3">
 					<div class="icons text-center"><i class="material-icons">favorite</i>
 						<h4>Free</h4>
-						<p>local delivery</p>
-						<p>consultations</p>
-						<h4>Prescription transfer</h4>
+						<p>Local Delivery</p>
+						<p>Consultations</p>
+						<h4>Prescription Transfer</h4>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="icons text-center"><i class="material-icons">local_shipping</i>
 						<h4>We understand sometimes</h4>
-						<p>is difficult to travel all the way </p>
-						<p>to the pharmacy that is why we come to you.</p>
+						<p>Is difficult to travel all the way </p>
+						<p>To the pharmacy that is why we come to you.</p>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="icons text-center"><i class="material-icons">local_phone</i>
-						<h4>856-952-1186</h4>
+						<h4>561-881-0022</h4>
 						<p> Our friendly and knowledgeable pharmacy staff are happy to answer any questions.</p>
 					</div>
 				</div>
@@ -322,15 +364,15 @@
 				<div class="icons-info">
 					<div class="icon"><i class="material-icons">phone</i></div>
 					<div class="caption text-center">
-						<h3>856-952-1186</h3>
+						<h3>561-881-0022 / 844-684-7288</h3>
 					</div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="icons-info">
-					<div class="icon"><i class="material-icons">location_on</i></div>
+					<div class="icon"><i class="material-icons"> <a href="https://www.google.co.ve/maps/place/4152+W+Blue+Heron+Blvd+%23129,+Riviera+Beach,+FL+33404,+EE.+UU./@26.7849327,-80.1048264,17z/data=!3m1!4b1!4m5!3m4!1s0x88d92a81641959d5:0xf499f30b5b8b0c30!8m2!3d26.7849279!4d-80.1026377?hl=es-419" target="_blank">location_on</a></i></div>
 					<div class="caption text-center">
-						<h3>1801 Collins Ave., Miami Beach, FL 33139 </h3>
+						<h3>4152 W. Blue Heron Blvd. Suite 129 Riviera Beach , FL 33404-4860</h3>
 					</div>
 				</div>
 			</div>
@@ -338,7 +380,7 @@
 				<div class="icons-info">
 					<div class="icon"><i class="material-icons">mail_outline</i></div>
 					<div class="caption text-center">
-						<h3>Email Us</h3>
+						<h3>info@motttopharmacy.com</h3>
 					</div>
 				</div>
 			</div>
@@ -349,7 +391,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h3 class="sub__title-primary">Talk to you pharmacist</h3>
+					<h3 class="sub__title-primary">Talk to Your Pharmacist</h3>
 				</div>
 				<div class="col-lg-12 col-md-12">
 					<div class="formBox">
@@ -387,7 +429,7 @@
 							</div><a class="btn button-primary" href="#">Book Consultation</a>
 						</form>
 					</div>
-					<p class="copyright text-muted">Copyright © 2018 All rights reserved by<span>"Motto Pharmacy"</span>	Design by <a href="#">QubitMarketing</a></p>
+					<p class="copyright text-muted">Copyright © 2018 All rights reserved by<span>"Motto Pharmacy"</span></p>
 				</div>
 			</div>
 		</div>
